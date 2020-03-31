@@ -1,0 +1,280 @@
+@media (max-width: 1170px){
+  .container{
+    max-width: 1024px;
+  }
+  html{
+    font-size: 14px;
+  }
+  .contacts{
+    &__country{
+      display: none;
+    }
+  }
+  .menu{
+    &__main{
+      &_size{
+        font-size: 1rem;
+      }
+    }
+  }
+  .main-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar{
+    flex: 1 0 auto;
+    max-width: none;
+    width: 100%;
+    &-bg{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  .container{
+    padding: 0 20px;
+  }
+  .header-row{
+    justify-content: space-between;
+    width: 100%;
+    &__wrap{
+      width: 100%;
+    }
+  }
+  .contacts{
+    flex-direction: column;
+    margin-left: 20px;
+    &__item{
+      text-align: right;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+  .cost{
+    margin-left: 20px;
+  }
+  .menu{
+    &__main{
+      margin-right: 20px;
+    }
+    &__item{
+      &_margin{
+        margin-left: 0px;
+      }
+    }
+  }
+  .content{
+    margin-top: 20px;
+    &-wrap{
+      max-width: 720px;
+      width: 100%;
+    }
+  }
+  .slider{
+    width: 100%;
+  }
+  .tab-content{
+    flex-direction: column-reverse;
+    padding: 0 0 70px;
+  }
+  .info{
+    &-tab{
+      flex-direction: column;
+    }
+  }
+  .delimiter{
+    border: none;
+  }
+  .footer{
+    &-container{
+      flex-direction: column;
+      align-items: center;
+    }
+    &-wrap{
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+    &-contact{
+      margin-left: 0;
+      margin-top: 10px;
+      &__item{
+        text-align: center;
+      }
+    }
+    &-top{
+      flex-direction: column;
+      align-items: center;
+    }
+    &-menu{
+      flex-direction: column;
+      .menu{
+        flex-direction: column;
+        margin: 0 auto;
+        &__main{
+          margin-right: 0;
+        }
+        &__item{
+          margin-top: 10px;
+          padding: 0;
+          &_gray{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .adress{
+    &__item{
+      flex-direction: column;
+    }
+    &-mail{
+      margin-left: 0;
+    }
+  }
+  .slider-wrap{
+    .slider-nav{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .header{
+    &-top{
+      flex-direction: column;
+      align-items: center;
+    }
+    &-row{
+      &__wrap{
+        margin-left: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+      }
+    }
+    &-bottom > nav{
+      width: 100%;
+    }
+  }
+  .menu{
+    flex-direction: column;
+    margin: 0 auto;
+    &__main{
+      margin-right: 0;
+    }
+    &__item{
+      margin-top: 10px;
+      padding: 0;
+      &_gray{
+        margin-left: 0;
+      }
+    }
+  }
+  .catalog{
+    &__title{
+      font-size: 1rem;
+    }
+  }
+  .filter{
+    flex-direction: column;
+    align-items: center;
+    &-col{
+      margin-top: 15px;
+      border: none;
+      padding: 0 30px;
+    }
+  }
+  .footer{
+    &-bottom{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .soc{
+    align-items: center;
+  }
+  .adress{
+    margin-right: 0;
+    text-align: center;
+  }
+  .slider{
+    &-item{
+      &__text{
+        font-size: 1rem;
+        line-height: 1;
+        bottom: 10px;
+        left: 20px;
+      }
+    }
+  }
+  .content{
+    &__title{
+      font-size: 2rem;
+    }
+  }
+  .plus{
+    flex-direction: column;
+    &:before{
+      display: none;
+    }
+    &-video{
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 565px){
+  .header{
+    &-row{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .contacts{
+    margin-left: 0;
+    &__item{
+      text-align: center;
+    }
+    &__note{
+      text-align: center;
+    }
+    &__number{
+      margin-left: 0;
+    }
+  }
+  .consult{
+    margin-left: 0;
+  }
+  .cost{
+    margin-left: 0;
+  }
+  .language, .cost, .contacts, .consult{
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width: 425px){
+  .filter{
+    &-search{
+      &__form{
+        flex-wrap: wrap;
+      }
+      &__btn{
+        width: 100%;
+      }
+    }
+  }
+  .plus{
+    &-video{
+      width: 100%;
+      height: auto;
+      &__img{
+        width: 100%;
+      }
+    }
+  }
+}

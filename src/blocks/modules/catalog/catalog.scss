@@ -1,0 +1,219 @@
+.catalog{
+  margin-top: 60px;
+  &__title{
+    font-size: 2rem;
+    color: $dark;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+  }
+}
+
+.filter{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  &-wrap{
+    margin-top: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 18px rgba(171, 171, 175, 0.45);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  &-col{
+    width: 100%;
+    max-width: 390px;
+    padding-left: 45px;
+    border-right: 2px solid rgba(12, 77, 162, 0.1);
+    &:last-child{
+      border-right: none;
+    }
+    &__title{
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      color: $dark;
+      display: block;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__icon{
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &-list{
+    margin-top: 35px;
+    height: 145px;
+    &__item{
+      margin-top: 20px;
+      position: relative;
+      padding-left: 30px;
+    }
+    &__title{
+      font-weight: bold;
+      display: block;
+      font-size: 1rem;
+      color: $dark;
+      margin: 20px 0;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+    &__input{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      opacity: 0;
+      z-index: 1;
+      top: -4px;
+      &:checked{
+        & ~ label{
+          font-weight: bold;
+        }
+        & + span{
+          &:before{
+            display: block;
+          }
+        }
+      }
+    }
+    &__checkmark{
+      position: absolute;
+      top: -4px;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 1px solid #C4C4C4;
+      border-radius: 4px;
+      &:before{
+        content: " ";
+        display: none;
+        width: 14px;
+        height: 10px;
+        background: url('../img/svg/check.svg');
+        background-size: 14px 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+    &__label{
+      font-size: 1rem;
+      color: $dark;
+    }
+  }
+  &-search{
+    margin-top: 15px;
+    &__form{
+      background: rgba(12, 77, 162, 0.07);
+      border-radius: 0px 0px 0px 15px;
+      display: flex;
+    }
+    &__btn{
+      font-size: 0.875rem;
+      color: $gray;
+      background: #fff;
+      border: none;
+      height: 40px;
+      width: 200px;
+      text-align: center;
+      cursor: pointer;
+    }
+    &__icon{
+      width: 10px;
+      height: 10px;
+    }
+    &__input{
+      background: transparent;
+      border: none;
+      outline: none;
+      padding-left: 30px;
+      height: 40px;
+      flex: 1 0 auto;
+    }
+    &__search{
+      &-ic{
+        width: 20px;
+        height: 20px;
+      }
+      &-btn{
+        background: transparent;
+        border: none;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+.show{
+  font-size: 0.875rem;
+  margin-top: 20px;
+  display: block;
+  color: $dark;
+}
+
+.slider2{
+  margin-top: 10px;
+  &-wrap{
+    width: calc(100% - 90px);
+    margin: 0 auto;
+    position: relative;
+  }
+  &-item{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 18px rgba(173, 171, 175, 0.65);
+    border-radius: 15px;
+    width: 340px;
+    overflow: hidden;
+    margin: 10px 15px;
+    &__img{
+      width: 100%;
+    }
+    &__wrap{
+      padding: 20px 20px 25px;
+    }
+    &__title{
+      font-size: 1.125rem;
+      color: $dark;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    &__text{
+      margin-top: 20px;
+      font-size: 1rem;
+      color: $dark;
+      line-height: 150%;
+    }
+    &__cost{
+      display: block;
+      margin-top: 10px;
+      text-align: right;
+      font-size: 1rem;
+    }
+  }
+  &-tag{
+    margin-top: 15px;
+    &__item{
+      color: $blue;
+      background: rgba(92, 128, 188, 0.2);
+      border-radius: 6px;
+      font-size: 0.875rem;
+      display: inline-block;
+      padding: 5px 10px;
+    }
+  }
+  &-arrow{
+    &_prev{
+      left: -40px;
+    }
+    &_next{
+      right: -40px;
+    }
+  }
+}

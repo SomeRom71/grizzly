@@ -1,0 +1,92 @@
+section.main
+  .container.main-container
+      aside.sidebar
+        ul.sidebar-menu
+          li.sidebar-menu__item
+            a(href="#") У вас есть
+          li.sidebar-menu__item.active
+            a(href="#") Мы предлагаем
+          li.sidebar-menu__item
+            a(href="#") Как это работает
+          li.sidebar-menu__item
+            a(href="#") Sinumerik 808D
+          li.sidebar-menu__item
+            a(href="#") Кто мы
+        ul.sidebar-links
+          li.sidebar-links__item
+            a(href="#") SITEKGRAM
+          li.sidebar-links__item
+            a(href="#") ШЕСТЬ способов связаться с нами
+        .sidebar-bg
+      .content
+        .content-wrap
+          .slider-wrap
+            .slider
+              .slider-item.overlay
+                a(href="#").slider-item__play
+                  +svgsprite('play')(class="slider-item__icon")
+                img(src="img/video.png" alt='slider').slider-item__img
+                p.slider-item__text Мы с 2012 года поставили ...
+                  br 
+                  | на сумму ...
+              .slider-item.overlay
+                a(href="#").slider-item__play
+                  +svgsprite('play')(class="slider-item__icon")
+                img(src="img/video.png" alt='slider').slider-item__img
+                p.slider-item__text Мы с 2012 года поставили ...
+                  br 
+                  | на сумму ...
+              .slider-item.overlay
+                a(href="#").slider-item__play
+                  +svgsprite('play')(class="slider-item__icon")
+                img(src="img/video.png" alt='slider').slider-item__img
+                p.slider-item__text Мы с 2012 года поставили ...
+                  br 
+                  | на сумму ...
+              .slider-item.overlay
+                a(href="#").slider-item__play
+                  +svgsprite('play')(class="slider-item__icon")
+                img(src="img/video.png" alt='slider').slider-item__img
+                p.slider-item__text Мы с 2012 года поставили ...
+                  br 
+                  | на сумму ...
+            ul.slider-nav
+              li.slider-arrow_prev.slider-arrow
+                +svgsprite('left-arrow')(class="slider-arrow__icon")
+              li.slider-arrow_next.slider-arrow
+                +svgsprite('right-arrow')(class="slider-arrow__icon")
+          .content-container
+            span.content__title У вас есть все, 
+              br
+              |  чтобы модернизировать
+              br
+              | старый станок
+            .plus
+              .plus-block
+                span.plus-block__title На каждом предприятии:
+                ul.plus-list
+                  li.plus-list__item Надежные, “неубиваемые” 
+                    br
+                    | советские станки типа  
+                    br
+                    b 16A20ФЗ, ГФ2171ФЗ, 16МЗ0ФЗ
+                  li.plus-list__item Штат опытных слесарей
+                    br 
+                    | и механиков, 
+                    br 
+                    | способных восстановить станок
+                span.plus-block__title Но:
+                ul.plus-list
+                  li.plus-list__item Устаревшая электроника станка
+                    br
+                    | нуждается в частых ремонтах
+                  li.plus-list__item Нет опытных сотрудников для
+                    br 
+                    | внедрения новой 
+                    br 
+                    | системы управления
+              .plus-video
+                img(src="img/video-sm.png" alt="video").plus-video__img
+                a(href="#")
+                  +svgsprite('play')(class="plus-video__icon")  
+                span.plus-video__text Краткий рассказ об этом

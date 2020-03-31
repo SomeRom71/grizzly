@@ -1,0 +1,99 @@
+.footer{
+  background: #F5F5F5;
+  padding: 55px 0 30px;
+  margin-top: 40px;
+  &-container{
+    display: flex;
+  }
+  &-wrap{
+    width: 100%;
+    margin-left: 55px;
+  }
+  &-top{
+    display: flex;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 15px;
+  }
+  &-bottom{
+    display: flex;
+    margin-top: 30px;
+  }
+  &-menu{
+    font-size: 0.875rem;
+    &__main{
+      &_size{
+        font-size: 1.625rem;
+      }
+    }
+  }
+  &-contact{
+    margin-left: auto;
+    &__item{
+      text-align: right;
+      &:last-child{
+        margin-top: 20px;
+      }
+    }
+    &__number{
+      font-weight: bold;
+      font-size: 1.125rem;
+      display: block;
+      color: $dark;
+    }
+    &__note{
+      margin-top: 5px;
+      color: $gray;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.adress{
+  margin-right: auto;
+  &__item{
+    margin-top: 20px;
+    color: $dark;
+    font-size: 0.875rem;
+    display: flex;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  &__text{
+    width: 280px;
+  }
+  &-mail{
+    margin-left: 70px;
+    &__link{
+      color: $dark;
+      font-size: 0.875rem;
+      display: block;
+    }
+  }
+}
+
+.soc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  &-list{
+    margin-top: 15px;
+    &__item{
+      display: inline-block;
+      margin-left: 25px;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+    &__icon{
+      max-height: 20px;
+      max-width: 20px;
+    }
+  }
+}
+
+.public-ofert{
+  color: $gray;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,147 @@
+.header{
+  background-image: url(../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-top{
+    display: flex;
+    padding-top: 10px;
+  }
+  &-row{
+    display: flex;
+    align-self: center;
+    align-items: baseline;
+    &__wrap{
+      display: flex;
+      margin-left: 75px;
+      padding-right: 20px;
+      border-bottom: 1px solid #CCCCCC;
+    }
+  }
+  &-bottom{
+    display: flex;
+    padding: 30px 0;
+  }
+}
+
+.language{
+  &__item{
+
+    &_active{
+      color: $dark;
+      font-weight: bold;
+    }
+    font-size: 1rem;
+    color: $gray;
+    text-transform: uppercase;
+    padding: 0 4px;
+  }
+}
+
+.cost{
+  margin-left: 50px;
+  &__text{
+    color: $gray;
+    font-size: 1rem;
+  }
+  &__value{
+    color: $dark;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+}
+
+.contacts{
+  display: flex;
+  margin-left: 75px;
+  &__item{
+    &:last-child{
+      margin-left: 30px;
+    }
+  }
+  &__country, &__note{
+    color: $gray;
+    font-size: 1rem;
+  }
+  &__number{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  &__note{
+    display: block;
+    text-align: right;
+    font-size: 0.875rem;
+  }
+}
+
+.consult{
+  background: $blue;
+  color: #fff;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  width: 150px;
+  height: 45px;
+  display: block;
+  text-align: center;
+  line-height: 45px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  &__main{
+    text-transform: uppercase;
+    color: $dark;
+    font-weight: bold;
+    margin-right: 40px;
+    &_size{
+      font-size: 2rem;
+    }
+  }
+  &__item{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $dark;
+    padding: 0 15px;
+    font-size: 1rem;
+    &_gray{
+      color: $gray;
+      margin-left: 25px;
+    }
+    &_margin{
+      margin-left: 50px;
+    }
+  }
+  &-last{
+    &__link{
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+    &__count{
+      font-size: 0.875rem;
+      color: #fff;
+      background: $blue;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      display: inline-block;
+      margin-left: 10px;
+      font-weight: normal;
+    }
+    &__icon{
+      width: 14px;
+      height: 18px;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.delimiter{
+  border-right: 1px solid $gray;
+}

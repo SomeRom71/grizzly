@@ -1,0 +1,140 @@
+section.catalog
+  .container
+    span.catalog__title КАТАЛОГ РЕТФРОФИТ-КОМПЛЕКТОВ
+    .filter-wrap
+      .filter
+        .filter-col
+          span.filter-col__title Тип станка
+          ul.filter-list
+            li.filter-list__item
+              input(type="checkbox" name="frez").filter-list__input
+              span.filter-list__checkmark
+              label(for="frez").filter-list__label Фрезерный
+            li.filter-list__item
+              input(type="checkbox" name="frez").filter-list__input
+              span.filter-list__checkmark
+              label(for="frez").filter-list__label Токарный
+        .filter-col
+          span.filter-col__title Модель станка
+          ul.filter-list.scroll
+            li.filter-list__title Бренд 1
+            li.filter-list__item
+              input(type="checkbox" name="frez").filter-list__input
+              span.filter-list__checkmark
+              label(for="frez").filter-list__label 16А20
+            li.filter-list__title Бренд 2
+            li.filter-list__item
+              input(type="checkbox" name="frez").filter-list__input
+              span.filter-list__checkmark
+              label(for="frez").filter-list__label 16А30
+            li.filter-list__title Бренд 3
+            li.filter-list__item
+              input(type="checkbox" name="frez").filter-list__input
+              span.filter-list__checkmark
+              label(for="frez").filter-list__label 16А30
+            li.filter-list__title Бренд 4
+            li.filter-list__item
+              input(type="checkbox" name="frez").filter-list__input
+              span.filter-list__checkmark
+              label(for="frez").filter-list__label 16А30
+        .filter-col
+          span.filter-col__title Вариант поставки
+            +svgsprite('question')(class="filter-col__icon")
+          ul.filter-list
+            li.filter-list__item
+              input(type="checkbox" name="frez").filter-list__input
+              span.filter-list__checkmark
+              label(for="frez").filter-list__label Модули
+            li.filter-list__item
+              input(type="checkbox" name="frez").filter-list__input
+              span.filter-list__checkmark
+              label(for="frez").filter-list__label Монтажные панели
+            li.filter-list__item
+              input(type="checkbox" name="frez").filter-list__input
+              span.filter-list__checkmark
+              label(for="frez").filter-list__label Электрошкаф
+      .filter-search
+        form.filter-search__form
+          input(type="text" placeholder="Поиск").filter-search__input
+          button.filter-search__search-btn
+            +svgsprite('search')(class="filter-search__search-ic")
+          button.filter-search__btn Очистить форму
+            +svgsprite('clean')(class="filter-search__icon")
+    span.show Показано 3 из 8
+    .slider2-wrap
+      .slider2
+        .slider2-item
+          img(src="img/slider2.png" alt="slider2").slider2-item__img
+          .slider2-item__wrap
+            a(href="#").slider2-item__title Ретрофит-комплект для станка 16А20
+            p.slider2-item__text Не дорогое ЧПУ, созданное SIEMENS, для конкуренции на азиатском рынке и производится в количестве более 10000 штук в год...
+            span.slider2-item__cost Цена от 
+              b 6 000 €
+            ul.slider2-tag
+              li.slider2-tag__item
+                a(href="#") Фрезерный
+              li.slider2-tag__item
+                a(href="#") 15A20
+              li.slider2-tag__item
+                a(href="#") ...
+        .slider2-item
+          img(src="img/slider2.png" alt="slider2").slider2-item__img
+          .slider2-item__wrap
+            a(href="#").slider2-item__title Ретрофит-комплект для станка 16А20
+            p.slider2-item__text Не дорогое ЧПУ, созданное SIEMENS, для конкуренции на азиатском рынке и производится в количестве более 10000 штук в год...
+            span.slider2-item__cost Цена от 
+              b 6 000 €
+            ul.slider2-tag
+              li.slider2-tag__item
+                a(href="#") Фрезерный
+              li.slider2-tag__item
+                a(href="#") 15A20
+              li.slider2-tag__item
+                a(href="#") ...  
+        .slider2-item
+          img(src="img/slider2.png" alt="slider2").slider2-item__img
+          .slider2-item__wrap
+            a(href="#").slider2-item__title Ретрофит-комплект для станка 16А20
+            p.slider2-item__text Не дорогое ЧПУ, созданное SIEMENS, для конкуренции на азиатском рынке и производится в количестве более 10000 штук в год...
+            span.slider2-item__cost Цена от 
+              b 6 000 €
+            ul.slider2-tag
+              li.slider2-tag__item
+                a(href="#") Фрезерный
+              li.slider2-tag__item
+                a(href="#") 15A20
+              li.slider2-tag__item
+                a(href="#") ...      
+        .slider2-item
+          img(src="img/slider2.png" alt="slider2").slider2-item__img
+          .slider2-item__wrap
+            a(href="#").slider2-item__title Ретрофит-комплект для станка 16А20
+            p.slider2-item__text Не дорогое ЧПУ, созданное SIEMENS, для конкуренции на азиатском рынке и производится в количестве более 10000 штук в год...
+            span.slider2-item__cost Цена от 
+              b 6 000 €
+            ul.slider2-tag
+              li.slider2-tag__item
+                a(href="#") Фрезерный
+              li.slider2-tag__item
+                a(href="#") 15A20
+              li.slider2-tag__item
+                a(href="#") ...
+        .slider2-item
+          img(src="img/slider2.png" alt="slider2").slider2-item__img
+          .slider2-item__wrap
+            a(href="#").slider2-item__title Ретрофит-комплект для станка 16А20
+            p.slider2-item__text Не дорогое ЧПУ, созданное SIEMENS, для конкуренции на азиатском рынке и производится в количестве более 10000 штук в год...
+            span.slider2-item__cost Цена от 
+              b 6 000 €
+            ul.slider2-tag
+              li.slider2-tag__item
+                a(href="#") Фрезерный
+              li.slider2-tag__item
+                a(href="#") 15A20
+              li.slider2-tag__item
+                a(href="#") ...
+      ul.slider-nav
+        li.slider-arrow_prev.slider-arrow.slider2-arrow_prev
+          +svgsprite('left-arrow')(class="slider-arrow__icon")
+        li.slider-arrow_next.slider-arrow.slider2-arrow_next
+          +svgsprite('right-arrow')(class="slider-arrow__icon")

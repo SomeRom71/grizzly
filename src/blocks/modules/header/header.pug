@@ -1,0 +1,40 @@
+header.header
+  .container
+    .header-top
+      a(href="#").logo
+        img(src="img/logo.png" alt="logo")
+      .header-row__wrap
+        .header-row
+          .language
+            a(href="#").language__item.language__item_active.delimiter рус
+            a(href="#").language__item eng
+          .cost
+            span.cost__text Цены в 
+            a(href="#").cost__value rub
+          .contacts
+            .contacts__item
+              span.contacts__country Беларусь
+              a(href="tel:+375296170015").contacts__number +375 (29) 617-00-15
+            .contacts__item 
+              span.contacts__country Россия
+              a(href="tel:+74812302559").contacts__number +7 (481) 230-25-59
+              span.contacts__note звонок бесплатный
+          a(data-fancybox data-src="#modal" href="javascript:;" class="btn btn-primary").consult Консультация
+    .header-bottom
+      nav
+        ul.menu
+          li.menu__main.menu__main_size
+            a(href="#") Ретрофит комплекты
+          li.menu__item.delimiter
+            a(href="#") токарные
+          li.menu__item
+            a(href="#") фрезерные
+          li.menu__item.menu__item_gray
+            a(href="#") комплектация
+          li.menu__item.menu__item_margin
+            a(href="#") sitekgram
+          li.menu__item.menu-last
+            a(href="#").menu-last__link
+              +svgsprite('file')(class="menu-last__icon")
+              | Мой файл
+              span.menu-last__count 10

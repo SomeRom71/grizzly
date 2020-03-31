@@ -1,0 +1,52 @@
+.slider, .slider2{
+  &-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 45px;
+    left: 0;
+    right: 0;
+  }
+  &-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: rgba(12, 77, 162, 0.07);
+    position: absolute;
+    cursor: pointer;
+    &__icon{
+      width: 10px;
+      height: 18px;
+    }
+    &_prev{
+      left: -60px;
+    }
+    &_next{
+      right: -60px;
+    }
+  }
+  .slick-dots li {
+    &.slick-active{
+      button{
+        &:before{
+          color: $blue;
+        }
+      }
+    }
+    button{
+      &:hover{
+        &:before{
+          color: $blue;
+        }
+      }
+      &:before{
+        font-size: 34px;
+        color: rgba(12, 77, 162, 0.4);
+        opacity: 1;
+      }
+    }
+  }
+}

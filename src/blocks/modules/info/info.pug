@@ -1,0 +1,96 @@
+section.info
+  .container
+    span.info__title ШЕСТЬ способов получить информацию
+    .info-block
+      ul.info-tab
+        li.info-tab__item(data-tab="1") 01 Мой файл
+        li.info-tab__item(data-tab="2") 02 Видео 1х1
+        li.info-tab__item(data-tab="3") 03 Заказать вебинар
+        li.info-tab__item(data-tab="4") 04 Сотрудники
+        li.info-tab__item(data-tab="5").active 05 FAQ
+      ul.info-content
+        li.info-content__item(data-tab="1")
+          | 01 Мой файл
+        li.info-content__item(data-tab="2")
+          | 02 blabla
+        li.info-content__item(data-tab="3")
+          | 03 blabla
+        li.info-content__item(data-tab="4")
+          | 04 blabla
+        li.info-content__item.active(data-tab="5")
+          .tab-content
+            .tab-content__text
+              p Cохраняйте все полезные материалы на нашем сайте в один документ, который будет сгенерирован в удобном виде в формате PDF
+              p Помечайте необходимые материалы
+                +svgsprite('file')(class="tab-content__icon") 
+                i (статьи, изображения, инструкции, новости и.т.д.)
+              p Зайдите в Мой файл и нажмите кнопку “Сгенерировать”
+              p Получите готовый документ на e-mail
+              p Или выберите один из готовых файлов, собранный нашими специалистами по интересующей вас теме
+              a(href="#").tab-content__btn
+                +svgsprite('file')(class="tab-content__icon")
+                | Мой файл
+            .tab-slider
+              .slider3-wrap
+                .slider3
+                  .slider3-item
+                    .slider3-item__head
+                      +svgsprite('file')(class="slider3-item__icon")
+                      img(src="img/slider3.png").slider3-item__img
+                    .slider3-item__body
+                      a(href="#").slider3-item__title Готовый файл “Продольно- фрезерные станки РАМА”
+                      i.slider3-item__text И.Иванов, 
+                        br
+                        | менеджер по продажам
+                      ul.slider3-tag
+                        li.slider3-tag__item Продольно-фрезерный
+                        li.slider3-tag__item.light Поставка
+                        li.slider3-tag__item.yellow РАМА
+                        li.slider3-tag__item ...
+                  .slider3-item
+                    .slider3-item__head
+                      +svgsprite('file')(class="slider3-item__icon")
+                      img(src="img/slider3.png").slider3-item__img
+                    .slider3-item__body
+                      a(href="#").slider3-item__title Готовый файл “Продольно- фрезерные станки РАМА”
+                      i.slider3-item__text И.Иванов, 
+                        br
+                        | менеджер по продажам
+                      ul.slider3-tag
+                        li.slider3-tag__item Продольно-фрезерный
+                        li.slider3-tag__item.light Поставка
+                        li.slider3-tag__item.yellow РАМА
+                        li.slider3-tag__item ...
+                  .slider3-item
+                    .slider3-item__head
+                      +svgsprite('file')(class="slider3-item__icon")
+                      img(src="img/slider3.png").slider3-item__img
+                    .slider3-item__body
+                      a(href="#").slider3-item__title Готовый файл “Продольно- фрезерные станки РАМА”
+                      i.slider3-item__text И.Иванов, 
+                        br
+                        | менеджер по продажам
+                      ul.slider3-tag
+                        li.slider3-tag__item Продольно-фрезерный
+                        li.slider3-tag__item.light Поставка
+                        li.slider3-tag__item.yellow РАМА
+                        li.slider3-tag__item ...
+                  .slider3-item
+                    .slider3-item__head
+                      +svgsprite('file')(class="slider3-item__icon")
+                      img(src="img/slider3.png").slider3-item__img
+                    .slider3-item__body
+                      a(href="#").slider3-item__title Готовый файл “Продольно- фрезерные станки РАМА”
+                      i.slider3-item__text И.Иванов, 
+                        br
+                        | менеджер по продажам
+                      ul.slider3-tag
+                        li.slider3-tag__item Продольно-фрезерный
+                        li.slider3-tag__item.light Поставка
+                        li.slider3-tag__item.yellow РАМА
+                        li.slider3-tag__item ...
+                ul.slider-nav
+                  li.slider-arrow_prev.slider-arrow.slider3-arrow_prev
+                    +svgsprite('left-arrow')(class="slider-arrow__icon")
+                  li.slider-arrow_next.slider-arrow.slider3-arrow_next
+                    +svgsprite('right-arrow')(class="slider-arrow__icon")
